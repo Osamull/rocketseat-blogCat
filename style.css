@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: #065E7C;
+
+    animation: move 2s;
+}
+
+.cabecalho label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    color: white;
+}
+
+.cabecalho input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #ffffff36;
+    color: white;
+} 
+
+.cabecalho input::placeholder{
+    color: white;
+}
+
+.cabecalho img{
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.user{
+    background-color: #065E7C;
+}
+
+.batCat{
+    aspect-ratio: 16/9;
+    object-fit:cover;
+    align-items: center;
+    width: 100%;
+}
+
+main h1{
+    text-align: center;
+    margin: 2rem 1rem 1rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+}
+
+.like-deslike{
+    justify-content: left;
+    align-items: center;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+
+.like-deslike > img:hover{
+    opacity: 0.9;
+}
+
+.conjunt-1 > p{
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.6rem; 
+    box-sizing: content-box;
+}
+
+.artigos-relacionados{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.artigos-relacionados h2{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+.artigos {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.artigos img{
+    aspect-ratio: 16/9;
+    object-fit:cover;
+    width: 10rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+    animation: appear 3s;
+}
+
+.artigos h3{
+    text-align: left;
+    margin-top: .8rem;
+}
+
+.artigos p{
+    width: 100%;
+    text-align: left;
+    box-sizing: content-box;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #387E96;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 768px){
+    .cabecalho{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cabecalho input{
+        width: 60rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .cabecalho{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cabecalho input{
+        width: 80rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .batCat{
+        width: 55rem;
+        height: 30rem;
+        border-radius: .5rem;
+        margin: 4rem 2rem 3rem 7rem;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .conjunt-1{
+        align-items: center;
+    }
+
+    .conjunt-like-deslike{
+        display: flex;
+        gap: 13rem;
+        margin-left: 3.5rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .conjunt-like-deslike h1{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .like-deslike img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+    .conjunt-1 p{
+        font-size: 1.4rem;
+        margin-left: 5rem;
+        box-sizing: content-box;
+    }
+
+    .conjunt-2{
+        margin-top: 2rem;
+    }
+
+    .artigos{
+        height: 10rem;
+    }
+
+    .artigos p {
+        font-size: 1.2rem;
+        width: 85%;
+        box-sizing: content-box;
+    }
+
+    .artigos h3{
+        font-size: 1.6rem;
+    }
+
+    footer{
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .cabecalho{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .cabecalho input{
+        width: 120rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .batCat{
+        width: 90rem;
+        height: 45rem;
+        border-radius: .5rem;
+        margin: 4rem 2rem 3rem 7rem;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .conjunt-1{
+        align-items: center;
+    }
+
+    .conjunt-like-deslike{
+        display: flex;
+        gap: 45rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .conjunt-like-deslike h1{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .like-deslike img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .conjunt-1 p{
+        font-size: 1.4rem;
+        margin-left: 5rem;
+        box-sizing: content-box;
+    }
+
+    .conjunt-2{
+        margin-top: 2rem;
+    }
+
+    .artigos{
+        height: 10rem;
+    }
+
+    .artigos p {
+        font-size: 1.2rem;
+        width: 85%;
+        box-sizing: content-box;
+    }
+
+    .artigos h3{
+        font-size: 1.6rem;
+    }
+
+    footer{
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(min-width:2560px){
+    .cabecalho{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .cabecalho input{
+        width: 210rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .cabecalho img{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .batCat{
+        width: 190rem;
+        height: 80rem;
+        border-radius: 1rem;
+        margin: 4rem 2rem 3rem 16rem;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .conjunt-1{
+        align-items: center;
+    }
+
+    .conjunt-like-deslike{
+        display: flex;
+        margin-left: 10rem; 
+        gap: 106rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .conjunt-like-deslike h1{
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .like-deslike img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+    .conjunt-1 p{
+        font-size: 2.5rem;
+        margin-left: 13rem; 
+        box-sizing: content-box;
+    }
+
+    .artigos{
+        margin-bottom: 10rem;
+    }
+
+
+    .artigos img{
+        width: 20rem;
+        height: 15rem;
+        margin: 1rem;
+    }
+
+    .artigos p {
+        font-size: 1.2rem;
+        width: 85%;
+        box-sizing: content-box;
+    }
+
+    .artigos h3{
+        font-size: 1.6rem;
+    }
+
+    footer{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+
+
